@@ -10,6 +10,7 @@
 # 13579 >>> Сумма чисел числа 13579 равна 25(1 + 3 + 5 + 7 + 9)
 # Совет: Для этого используйте конкатенацию строк и срезы
 
+
 # Первое решение
 three_Namber = 123
 
@@ -18,3 +19,14 @@ thied = three_Namber % 10
 secod = (three_Namber % 100) // 10
 
 print(f'Сумма чисел числа {three_Namber} равна {first + secod + thied}')
+
+
+# Второе решение
+number = '13579'
+str = ''
+count = 0
+for i in number:
+    count += int(i)
+    str += i + ' + '
+
+print(f'Сумма чисел числа {number} равна {count}({str}\b\b\b) ')
