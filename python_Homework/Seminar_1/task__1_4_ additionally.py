@@ -6,3 +6,9 @@
 # Примеры/Тесты:
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+n = int(input('n = '))
+m = int(input('m = '))
+k = int(input('k = '))
+
+print(f"{n, m, k} -> {'yes' if (k % n == 0 or k % m == 0) and k < n * m and k > 0 and (m, n) > 0 else 'no'}")
