@@ -11,3 +11,20 @@
 # ...
 # 1 0 1 1 0
 # Кол-во монет, чтобы перевернуть: 2
+
+n = 5
+heads = 0
+tails = 0
+for i in range(n):
+    coin_Side = input()
+    if coin_Side == '0':
+        heads += 1
+    elif coin_Side == '1':
+        tails += 1
+
+if heads <= tails:
+    print(f"Кол-во монет, чтобы перевернуть: {heads}")
+else:
+    print(f"Кол-во монет, чтобы перевернуть: {tails}")
+
+ 
