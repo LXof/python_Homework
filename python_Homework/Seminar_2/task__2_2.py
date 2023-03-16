@@ -29,4 +29,14 @@
     # x1 = (-b + sqrt(d)) / 2
     # x2 = c / x1
 
+b = int(input("Сумма: s = "))
+c = int(input("Произведение: p = "))
+print(f"x1 + x2 = {-b}")
+print(f"x1 * x2 = {c}\n")
 
+# x^2 + xb + c = 0
+d = (b * b - 4 * c) ** 0.5
+x1 = abs((-b + d) / 2)
+x2 = c / x1
+
+print(f"x1 = {x1}; x2 = {x2}")
