@@ -8,3 +8,25 @@
 # Output: 2
 # Input: [10, 5, 7, 3, 3, 2, 5, 7, 3, 8], X = 9
 # Output: 10
+
+
+
+list_1 = [10, 5, 7, 3, 3, 2, 5, 7, 3, 8]
+
+x = int(input("x = "))
+
+outpit = 0
+flag = True
+
+list_1.sort()
+print(list_1)
+for i in list_1:
+    if x < i:
+        outpit = i
+        break
+    if x == list_1[-1]:
+        outpit = list_1[-2]
+    if x > i:
+        outpit = list_1[-1]
+    
+print(outpit)
