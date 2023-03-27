@@ -11,3 +11,14 @@
 # Input1: 2 4 6 8 10 10 8 6 4 2
 # Input2: 3 9 12 15 18
 # Output: Повторяющихся чисел нет
+
+input1 = {2, 4, 6, 8, 10, 12, 10, 8, 6, 4, 2}
+input2 = {3, 6, 9, 12, 15, 18}
+
+if input1.intersection(input2):
+    i = input1.intersection(input2)
+    print(*sorted(list(i)))
+else:
+    print("Повторяющихся чисел нет!")
+
+
